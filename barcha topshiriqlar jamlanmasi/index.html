@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>1,2,3,4,5-misol</title>
+</head>
+
+<body>
+
+    <div class="container" id="con" >
+        <h1 class="text-center mb-5 mt-5">Videos Galery</h1>
+        <div class="d-flex align-items-center justify-content-center">
+            <input type="text" class="form-control w-25 me-3" name="" id="inputValue" placeholder="video1 , video2 .. for searching" >
+            <button class="btn btn-grey border border-1 me-3" id="searchBtn">Search</button>
+            <button class="btn btn-dark me-3" id="addBtn">Add</button>
+            <button class="btn btn-danger me-3" id="deleteBtn">Delte</button>
+        </div>
+        
+        <div class="row py-5" id="parent">
+                <div class="col-lg-3 col-md-6 col-sm-12 mt-3" id="parentBox">
+                    <div class="box rounded shadow bg-white position-relative" id="boxImg">
+                        <iframe width="100%"  src="https://www.youtube.com/embed/D3C8zir3ad8" id="video"></iframe>
+                        <i class="fa fa-trash fa-2x text-danger position-absolute bottom-0 end-0" id="icons"></i>
+                        <p id="tartib">1-video</p>
+                    </div>
+                </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script src="./index.js"></script>
+</body>
+
+</html>
